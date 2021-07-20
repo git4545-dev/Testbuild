@@ -3,10 +3,9 @@ pipeline {
 
     stages {
     
-               echo 'build started from Gihub Repository'
-        stage('Build Stage') {
+             stage('Build Stage') {
             steps {
-                echo 'build successfull'
+                  echo 'build started from Gihub Repository'
             }
         }
     
