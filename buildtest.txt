@@ -1,1 +1,32 @@
-git build integration with jenkins successfull
+pipeline {
+    agent any
+
+    stages {
+    
+               echo 'build started from Gihub Repository'
+        stage('Build Stage') {
+            steps {
+                echo 'build successfull'
+            }
+        }
+    
+            stage('Deploy Stage') {
+            steps {
+                echo 'Deploy Sucessful'
+            }
+        }
+    
+        stage('Test Stage') {
+            steps {
+                echo 'Test Successfull'
+            }
+        }
+    
+        stage('Release Stage') {
+            steps {
+                echo 'Release successfull'
+            }
+        }
+    }
+}
+
